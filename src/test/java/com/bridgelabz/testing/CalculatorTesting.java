@@ -1,4 +1,4 @@
-package testing;
+package com.bridgelabz.testing;
 
 import com.bridgelabz.junit.Calculator;
 import org.junit.Test;
