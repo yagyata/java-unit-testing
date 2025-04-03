@@ -1,28 +1,28 @@
 package com.bridgelabz.testing;
 import com.bridgelabz.junit.DatabaseConnection;
 import org.junit.jupiter.api.*;
-import org.junit.jupiter.api.Test;
 
 import static org.junit.Assert.*;
 
 public class DatabaseConnectionTesting {
+
     @BeforeEach
-    void connect() {
+    void connectTest() {
         DatabaseConnection.connect();
     }
 
     @AfterEach
-    void disconnect() {
+    void disconnectTest() {
         DatabaseConnection.disconnect();
     }
 
     @Test
-    void checkConnection() {
+    void checkConnectionTest() {
         assertTrue(DatabaseConnection.isConnected());
     }
 
     @Test
-    void checkConnectionOff() {
+    void checkConnectionOffTest() {
         DatabaseConnection.disconnect();
         assertFalse(DatabaseConnection.isConnected());
     }
