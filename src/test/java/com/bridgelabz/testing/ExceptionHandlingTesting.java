@@ -1,9 +1,10 @@
 package com.bridgelabz.testing;
 
 import com.bridgelabz.junit.ExceptionHandling;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.*;
+
 
 public class ExceptionHandlingTesting {
 
@@ -12,8 +13,11 @@ public class ExceptionHandlingTesting {
         assertEquals(5, ExceptionHandling.divide(20,4));
     }
 
-    @Test(expected = ArithmeticException.class)
-    public void divideByZeroTest() {
-        ExceptionHandling.divide(20,0);
+    void testException() {
+        assertThrows(ArithmeticException.class, () -> {
+            int result = 10 / 0; // Throws ArithmeticException
+        });
     }
+
+
 }

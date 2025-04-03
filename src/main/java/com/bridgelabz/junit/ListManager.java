@@ -2,7 +2,7 @@ package com.bridgelabz.junit;
 
 import java.util.List;
 
-public class ListOperations {
+public class ListManager {
     public static boolean addElement(List<Integer> list, int element) {
         return list.add(element);
     }

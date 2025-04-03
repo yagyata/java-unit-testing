@@ -1,10 +1,9 @@
 package com.bridgelabz.testing;
 
-import com.bridgelabz.junit.Calculator;
 import com.bridgelabz.junit.StringUtils;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class StringUtilsTesting {
     @Test

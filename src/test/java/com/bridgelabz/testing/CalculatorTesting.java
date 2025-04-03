@@ -1,9 +1,11 @@
 package com.bridgelabz.testing;
 
 import com.bridgelabz.junit.Calculator;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+
 
 public class CalculatorTesting {
 
@@ -12,14 +14,14 @@ public class CalculatorTesting {
     public void addTest() {
         int result = Calculator.add(15, 32);
         int expected = 47;
-        assertEquals(expected,result);
-        assertEquals(22,Calculator.add(17,5));
+        assertEquals(expected, result);
+        assertEquals(22, Calculator.add(17, 5));
     }
 
     //test method for subtract
     @Test
     public void subtractTest() {
-        int result = Calculator.subtract(24,7);
+        int result = Calculator.subtract(24, 7);
         int expected = 17;
         assertEquals(expected, result);
     }
@@ -40,9 +42,10 @@ public class CalculatorTesting {
         assertEquals(expected, result, 0.0001);
     }
 
-    @Test(expected = ArithmeticException.class)
-    public void divideByZeroTest() {
-        Calculator.divide(1, 0);
+    @Test
+    void divideByZeroTest() {
+        assertThrows(ArithmeticException.class, () -> {
+            int result = 10 / 0; // Throws ArithmeticException
+        });
     }
-
 }

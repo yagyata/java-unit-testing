@@ -2,7 +2,8 @@ package com.bridgelabz.testing;
 import com.bridgelabz.junit.DatabaseConnection;
 import org.junit.jupiter.api.*;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.*;
+
 
 public class DatabaseConnectionTesting {
 
@@ -20,6 +21,7 @@ public class DatabaseConnectionTesting {
     void checkConnectionTest() {
         assertTrue(DatabaseConnection.isConnected());
     }
+
 
     @Test
     void checkConnectionOffTest() {
