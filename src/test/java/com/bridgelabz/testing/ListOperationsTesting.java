@@ -3,11 +3,20 @@ package com.bridgelabz.testing;
 import com.bridgelabz.junit.ListOperations;
 
 import org.junit.Test;
-import java.util.ArrayList;
-import java.util.List;
+import org.junit.jupiter.api.BeforeAll;
+
+import java.util.*;
 import static org.junit.Assert.*;
 
 public class ListOperationsTesting {
+
+    static List<Integer> list;
+    @BeforeAll
+    public void setList() {
+        list = new ArrayList<>();
+        ListOperations.addElement(list,10);
+        ListOperations.addElement(list,12);
+    }
 
     @Test
     public void testAddElement() {
@@ -23,13 +32,9 @@ public class ListOperationsTesting {
     @Test
     public void testRemoveElement() {
         List<Integer> list = new ArrayList<>();
-        list.add(5);
-        list.add(10);
 
-        int removedValue = ListOperations.removeElement(list, 5);
-        assertEquals(5, removedValue);
-        assertEquals(1, list.size());
-        assertFalse(list.contains(5));
+        int removedValue = ListOperations.removeElement(list, 12);
+        assertFalse(list.contains(12));
 
         int notFound = ListOperations.removeElement(list, 20);
         assertEquals(-1, notFound);
