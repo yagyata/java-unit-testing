@@ -1,15 +1,28 @@
 package com.bridgelabz.testing;
 
+import com.bridgelabz.junit.ParameterizedTests;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.ValueSource;
+import org.junit.jupiter.params.provider.CsvSource;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 public class ParameterizedTesting {
+    ParameterizedTests parameterized;
+    @BeforeEach
+    void setUp() {
+        parameterized = new ParameterizedTests();
+    }
+
     @ParameterizedTest
-    @ValueSource(ints = {2,4,6,7,9})
-    void isEvenTest(int num) {
-        assertTrue(num % 2 == 0 || num % 2 ==1);
+    @CsvSource({
+            "2, true",
+            "4, true",
+            "9, false",
+            "10, true"
+    })
+    public void isEvenTest(int number, boolean expected) {
+        assertEquals(expected, parameterized.isEven(number));
     }
 }
