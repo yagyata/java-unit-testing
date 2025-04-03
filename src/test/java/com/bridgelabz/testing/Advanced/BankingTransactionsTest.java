@@ -1,6 +1,6 @@
-package com.bridgelabz.testing;
+package com.bridgelabz.testing.Advanced;
 
-import com.bridgelabz.junit.BankAccount;
+import com.bridgelabz.junit.Advanced.BankAccount;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

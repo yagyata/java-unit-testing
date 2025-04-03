@@ -1,6 +1,6 @@
-package com.bridgelabz.testing;
+package com.bridgelabz.testing.Basic;
 
-import com.bridgelabz.junit.ListManager;
+import com.bridgelabz.junit.Basic.ListManager;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 

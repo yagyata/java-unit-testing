@@ -1,5 +1,5 @@
-package com.bridgelabz.testing;
-import com.bridgelabz.junit.DatabaseConnection;
+package com.bridgelabz.testing.Basic;
+import com.bridgelabz.junit.Basic.DatabaseConnection;
 import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;

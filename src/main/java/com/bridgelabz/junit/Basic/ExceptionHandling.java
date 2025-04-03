@@ -1,4 +1,4 @@
-package com.bridgelabz.junit;
+package com.bridgelabz.junit.Basic;
 
 public class ExceptionHandling {
     public static int divide(int a, int b) {

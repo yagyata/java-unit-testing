@@ -1,6 +1,6 @@
-package com.bridgelabz.testing;
+package com.bridgelabz.testing.Advanced;
 
-import com.bridgelabz.junit.TemperatureConverter;
+import com.bridgelabz.junit.Advanced.TemperatureConverter;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

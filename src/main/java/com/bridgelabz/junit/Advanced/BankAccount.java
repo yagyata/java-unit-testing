@@ -1,4 +1,4 @@
-package com.bridgelabz.junit;
+package com.bridgelabz.junit.Advanced;
 
 public class BankAccount {
     private double balance;

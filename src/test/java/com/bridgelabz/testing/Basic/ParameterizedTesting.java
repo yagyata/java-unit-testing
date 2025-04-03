@@ -1,6 +1,6 @@
-package com.bridgelabz.testing;
+package com.bridgelabz.testing.Basic;
 
-import com.bridgelabz.junit.ParameterizedTests;
+import com.bridgelabz.junit.Basic.ParameterizedTests;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;

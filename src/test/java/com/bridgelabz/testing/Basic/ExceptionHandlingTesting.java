@@ -1,6 +1,6 @@
-package com.bridgelabz.testing;
+package com.bridgelabz.testing.Basic;
 
-import com.bridgelabz.junit.ExceptionHandling;
+import com.bridgelabz.junit.Basic.ExceptionHandling;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

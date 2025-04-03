@@ -1,6 +1,6 @@
-package com.bridgelabz.testing;
+package com.bridgelabz.testing.Basic;
 
-import com.bridgelabz.junit.FileProcessor;
+import com.bridgelabz.junit.Basic.FileProcessor;
 import org.junit.jupiter.api.Test;
 
 import java.io.File;

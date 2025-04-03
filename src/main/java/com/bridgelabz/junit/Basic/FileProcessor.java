@@ -1,4 +1,4 @@
-package com.bridgelabz.junit;
+package com.bridgelabz.junit.Basic;
 
 import java.io.*;
 

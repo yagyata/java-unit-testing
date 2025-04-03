@@ -1,6 +1,6 @@
-package com.bridgelabz.testing;
+package com.bridgelabz.testing.Basic;
 
-import com.bridgelabz.junit.TimeOut;
+import com.bridgelabz.junit.Basic.TimeOut;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
 
