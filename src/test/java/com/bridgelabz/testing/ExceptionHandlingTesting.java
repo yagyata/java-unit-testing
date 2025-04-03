@@ -13,10 +13,9 @@ public class ExceptionHandlingTesting {
         assertEquals(5, ExceptionHandling.divide(20,4));
     }
 
-    void testException() {
-        assertThrows(ArithmeticException.class, () -> {
-            int result = 10 / 0; // Throws ArithmeticException
-        });
+    @Test
+    public void testException() {
+        assertThrows(ArithmeticException.class, () -> ExceptionHandling.divide(20,0));
     }
 
 
