@@ -7,12 +7,12 @@ import static org.junit.Assert.*;
 public class DatabaseConnectionTesting {
 
     @BeforeEach
-    void connectTest() {
+    void testConnect() {
         DatabaseConnection.connect();
     }
 
     @AfterEach
-    void disconnectTest() {
+    void testDisconnect() {
         DatabaseConnection.disconnect();
     }
 
@@ -25,5 +25,6 @@ public class DatabaseConnectionTesting {
     void checkConnectionOffTest() {
         DatabaseConnection.disconnect();
         assertFalse(DatabaseConnection.isConnected());
+
     }
 }

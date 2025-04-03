@@ -11,6 +11,7 @@ public class DatabaseConnection {
         isConnected = false;
         System.out.println("Database is disconnected");
     }
+
     public static boolean isConnected() {
         return isConnected;
     }
