@@ -8,9 +8,6 @@ public class PasswordValidator {
         String regex = "^(?=.*[A-Z])(?=.*[a-z])(?=.*\\d)[A-Za-z\\d]{8,}$";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(password);
-        while(matcher.matches()){
-            return true;
-        }
-        return false;
+        return matcher.matches();
     }
 }
